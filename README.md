@@ -35,6 +35,7 @@ Cada estudiante del programa tiene su **propia rama** dedicada en este repositor
   - Trabajos y proyectos completados
   - Progreso académico
   - Recursos específicos de cada participante
+  - **`info.json`**: Archivo con datos del estudiante
 
 ### Cómo identificar tu rama:
 ```
@@ -42,12 +43,33 @@ Formato: nombre-apellido o codigo-estudiante
 Ejemplo: juan-olivar o EST-001
 ```
 
+### 📋 Archivo `info.json` en cada rama estudiante
+
+Cada rama de estudiante debe contener un archivo `info.json` con la siguiente información:
+
+```json
+{
+  "nombre": "Nombre Completo del Estudiante",
+  "email": "correo@estudiante.com",
+  "celular": "+57 3XX XXXXXXX",
+  "codigo_estudiante": "EST-001",
+  "rama": "nombre-apellido"
+}
+```
+
+**Campos requeridos:**
+- 👤 **nombre**: Nombre completo del estudiante
+- 📧 **email**: Correo electrónico de contacto
+- 📱 **celular**: Número de teléfono celular
+- 🆔 **codigo_estudiante**: Código único del estudiante
+- 🌿 **rama**: Nombre de la rama asignada
+
 ---
 
 ## 📂 Contenido Principal
 
 - **`Guia_Git_GitHub_Principiantes.pdf`**: Guía introductoria sobre Git y GitHub para estudiantes principiantes
-- **`info.json`**: Archivo de configuración (en desarrollo)
+- **`info.json`**: Archivo de configuración general (en desarrollo)
 - **`README.md`**: Este archivo (documentación general del proyecto)
 
 ---
@@ -58,13 +80,15 @@ Ejemplo: juan-olivar o EST-001
 1. Solicita acceso a tu rama personal
 2. Clona el repositorio: `git clone https://github.com/juanpabloolivarmales-beep/programing-after-funprotec.git`
 3. Cambia a tu rama: `git checkout tu-rama`
-4. Crea y actualiza tus notas y trabajos
-5. Realiza commits regulares con mensajes claros
+4. **Completa tu `info.json`** con tus datos personales
+5. Crea y actualiza tus notas y trabajos
+6. Realiza commits regulares con mensajes claros
 
 ### Para Instructores:
 1. Revisa el progreso en las ramas individuales
-2. Actualiza la rama `main` con nuevos recursos
-3. Proporciona retroalimentación a través de pull requests o comentarios
+2. Verifica que cada estudiante tenga completado su `info.json`
+3. Actualiza la rama `main` con nuevos recursos
+4. Proporciona retroalimentación a través de pull requests o comentarios
 
 ---
 
@@ -73,6 +97,7 @@ Ejemplo: juan-olivar o EST-001
 - ✅ Realiza commits frecuentes con mensajes descriptivos
 - ✅ Mantén tu rama personal actualizada con la rama main
 - ✅ Usa la rama `main` solo para contenido compartido
+- ✅ **Completa y actualiza tu `info.json` al crear tu rama**
 - ✅ Documenta tu progreso regularmente
 - ✅ Respeta la estructura y organización del repositorio
 
